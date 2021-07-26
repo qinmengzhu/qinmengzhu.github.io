@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Versaille : HTML Documentation Guide</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+
+        <!--Fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic%7CRaleway:400,600' rel='stylesheet' type='text/css'>
+
+        <!--jQuery and plugins-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+        <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+        <!--Icons and Animates-->
+        <link rel="stylesheet" href="plugins/elegant-font/style.css">
+        <link rel="stylesheet" href="plugins/et-line-font/style.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+
+        <!--Media Element Player-->
+        <link rel="stylesheet" href="plugins/mediaelement/mediaelementplayer.min.css">
+        <link rel="stylesheet" href="css/mediaelementplayer.css">
+        <script type="text/javascript" src="plugins/mediaelement/mediaelement-and-player.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+
+        <link rel="stylesheet" type="text/css" href="doc/google-code-prettify/prettify.css">
+        <!-- Inline Doc Styles -->
+        <style type="text/css">
+
+            [class^=col-] > h2, [class^=col-] > h3 {padding-top: 80px; }
+            h4:not(.panel-title) {padding-top: 40px; }
+            span.width {width: 150px; display: inline-block; }
+            .content p a:not(.btn), .content p a:not(.btn):hover,.content ul:not(.pagination) li a, .content ul:not(.pagination) li a:hover { 
+                text-decoration: none;
+                border-bottom: 1px dotted;
+            }
+            .nav-tabs li a, .nav-tabs li a:hover {border-bottom: none !important;}
+            .b_control_g, .b_control_m{ display: none; }
+            .b_control_x{ display: block; }
+            #builder_preview{min-height: 200px; position: relative; padding-top: 50px; }
+            #builder_preview::after{content: 'LIVE RESULT'; position: absolute; top: 15px; left: 0px; }
+            .builder_result{width: 100%; }
+            #builder_result, #builder_result_json{
+                width: 100%;
+                border: 0px;
+                outline: none;
+                padding: 15px;
+                min-height: 170px;
+                font-family: courier;
+                font-size: 12px;
+                background-color: #f9f9f9;
+            }
+            .table>thead>tr>th,.table>thead>tr>td, .table>tbody>tr>td {vertical-align: middle; }
+            pre {background-color: #f9f9f9; border-radius: 3px; }
+            pre.prettyprint {border-color: #ddd; padding: 15px 20px; }
+            .btn:not(.glass) {margin-bottom: 10px;}
+            @media only screen and (max-width: 480px) {
+                a[class^="social_"] {
+                    margin-bottom: 10px;
+                }
+            }
+            #affix_nav .navbar-nav{margin-right: 0}
+        </style>
+
+    </head>
+    <body class="header-light header-fixed-top">
+
+        <!-- Document wrapper
+        ================================================== -->
+        <div class="wrapper">
+
+            <!-- Header
+            ================================================== -->
+            <header id="header" class="navbar navbar-default">
+                <div class="container" id="affix_nav">
+
+                    <!-- Branding & Logo
+                    ================================================== -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Versaille HTML Template</a>
+                    </div>
+
+                    <!-- Main navigation
+                    ================================================== -->
+                    <nav>
+                        <ul class="nav navbar-nav main-menu">
+                            <li class="active"><a href="#general">General</a>
+                                <ul>
+                                    <li><a href="#welcome">Welcome!</a></li>
+                                    <li><a href="#install">Installation</a></li>
+                                    <li><a href="#folder">Folder Structure</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#html">HTML</a>
+                                <ul>
+                                    <li><a href="#main">HTML Structure</a></li>
+                                    <li><a href="#layout">Containers & Layouts</a></li>
+                                    <li><a href="#title">Page Title</a></li>
+                                    <li><a href="#content">Content & Sidebar</a></li>
+                                    <li><a href="#foot">Footer</a></li>
+                                    <li><a href="#widget">Widgets</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#css">CSS</a>
+                                <ul>
+                                    <li><a href="#css-structure">CSS Structure</a></li>
+                                    <li><a href="#class">Template Classes</a></li>
+                                    <li><a href="#boot">Bootstrap classes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#head">Header</a>
+                                <ul>
+                                    <li><a href="#head-style">Header</a></li>
+                                    <li><a href="#logo">Logo & Branding</a></li>
+                                    <li><a href="#menu">Menu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#extra">Extras</a>
+                                <ul>
+                                    <!-- <li><a href="#less">LESS (-)</a></li> -->
+                                    <li><a href="#font">FONT</a></li>
+                                    <li><a href="#api">Get Purchase Code</a></li>
+                                    <li><a href="#credit">Credits</a></li>
+                                </ul>
+                            </li>
+
+                        </ul><!-- .main-menu -->
+
+                    </nav><!-- .main-menu -->
+                </div><!-- end .container -->
+            </header>
+
+            <!-- Content
+            ================================================== -->
+            <div class="content">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+
+                            <!-- Welcome -->
+                            <div class="row">
+                                <div class="col-md-12 text-center padding2x no-padding-bottom">
+                                    <h1 id="welcome" class="heading-dash">Welcome Everyone!</h1>
+                                    <p>Thank you for taking a time for visiting this page either you've purchased or interesting it. We are introducing you the Versaille template that is the best theme we've ever built. Very first you should be familiar with this document and read carefully details because the purpose of this file is to cover & explain you all possible variations and usages and save your time.</p>
+
+                                    <a href="http://themeton.com/support" class="btn btn-primary btn-sm styled">SUPPORT FORUM</a>
+                                    <a href="http://themeforest.net/item/versaille-personal-blog-html5-template/12967327?ref=themeton" class="btn btn-success btn-sm styled hidden-xxs">PURCHASE TEMPLATE</a>
+
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+                            <!-- General -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h2 id="general" class="text-center">General</h2>
+                                    <div class="divider brand centered"></div>
+
+                                    <h3 class="heading-dash" id="install">Installation</h3>
+                                    <p>Follow the steps below before you to get started:</p>
+                                    <ol>
+                                        <li>Open the <code>Versaille</code> directory from all the template downloads.</li>
+                                        <li>Upload template files to your Web Server using FTP client software</li>
+                                        <li>Your site will work at least with following required files/folders:
+                                            <ul>
+                                                <li><span class="width"><code>less/</code></span> Less Folder</li>
+                                                <li><span class="width"><code>images/</code></span> Images Folder</li>
+                                                <li><span class="width"><code>js/</code></span> Javacripts Folder</li>
+                                                <li><span class="width"><code>vendors/</code></span> Vendors Folder</li>
+                                                <li><span class="width"><code>style.css</code></span> Main Stylesheet</li>
+                                                <li><span class="width"><code>index.html</code></span> Index File</li>
+                                            </ul>
+                                        </li>
+                                        <li>Add your content and customize the template for your need.</li>
+                                    </ol>
+                              </div>
+                            </div>
+
+                            <!-- Folder Structure -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="heading-dash" id="folder">Folder Structure</h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>The template has followed next folder structure and each folder has multiple files and I didn't print all the single file names here to prevent very high tree. You can find the files quickly by folder names that needs to edit and use.</p>
+                                    <p>Main folder has 10+ html files named their relevant content. Read names and find your proper file to get the html content.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <pre>
+Versaille/
+├── less/
+├── images/
+├── js/
+├── vendors/
+│   ├── bootstrap/
+│   ├── font-awesome/
+│   ├── gsap
+│   ├── iostope/
+│   └── jquery-waypoints/
+├── index.html
+├── style.css
+└── *.*         </pre>
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+
+                            <!-- Markup Structure -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h2 class="text-center" id="html">Markup Structure</h2>
+                                    <div class="divider brand centered"></div>
+
+                                    <h3 id="main" class="heading-dash">General Structure</h3>
+                                    <p>This is main html structure and most of pages followed this structure.</p>
+                                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Versaille HTML Template&lt;/title&gt;
+        
+        ... &lt;!-- Stylesheet & Header includes --&gt;
+        
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+
+            &lt;header id="header" class="navbar navbar-default sticky animated fadeInDown"&gt;
+                ...
+            &lt;/header&gt;
+
+            &lt;section class="page-title"&gt;
+                ...
+            &lt;/section&gt;
+
+            &lt;section class="content-area"&gt;
+                ...
+            &lt;/section&gt;
+            
+            &lt;footer id="footer"&gt;
+                ...
+            &lt;/footer&gt;
+        
+        ... &lt;!-- Scripts includes --&gt;
+        
+    &lt;/body&gt;
+&lt;/html&gt;   </pre>
+                                </div>
+                            </div><!-- .row -->
+
+
+                            <!-- Containers & Layouts -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="heading-dash" id="layout">Containers & Layouts</h3>
+                                    <p>Bootstrap requires a containing element to wrap site contents and house the grid system. You may choose one of two containers to use in your site. Note that, due to <code>padding</code> and more, neither container is nestable.</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <br>
+                                    <p>Use <code>.container</code> for a responsive fixed width container.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <pre>&lt;div class="container"&gt;
+  ...
+&lt;/div&gt;</pre>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <p>Use <code>.container-fluid</code> for a full width container, spanning the entire width of your viewport.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <pre>&lt;div class="container-fluid"&gt;
+  ...
+&lt;/div&gt;</pre>
+                                </div>
+                            </div>
+
+                  
+                            <!-- Page Title -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="title" class="heading-dash">Page Title</h3>
+                                    <pre>   &lt;section class="page-title" data-bg-image="images/pages/cover.jpg"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="pull-left"&gt;
+              &lt;div class="pull-right"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/section&gt;</pre>
+                                    <p>You can use align classes on page title and make centered or right style. <code>.text-center</code>, <code>.text-right</code>.</p>
+                                    <pre>&lt;section class="section-area <strong><em>text-center</em></strong>"&gt;
+    ...</pre>
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+                            <!-- Content Area & Sidebar -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="content" class="heading-dash">Content Area</h3>
+                                    <p>Use below markup for blog & single post page on <code>.content</code> section at the above.</p>
+                                    <p>Your primary section should place above. Now the container splitted by 9 and 3 for content.</p>
+                                    <pre>   &lt;section class="section-content bg-grey"&gt;
+        
+        &lt;div class="container"&gt;
+            
+            &lt;div class="row"&gt;
+                &lt;div class="col-sm-9"&gt;
+                ...
+                &lt;/div&gt;
+                ...
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;</pre>
+
+                            <!-- Footer -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="foot" class="heading-dash">Footer</h3>
+                                    <p>Place your footer content here.</p>
+                                    <pre>   &lt;footer id="footer"&gt;
+        
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-sm-12"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-sm-12"&gt; 
+                        ...
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="scroll-top"&gt;
+                    &lt;div class="entry-footer"&gt;
+                        Copyright © 2015 - All Rights Reserved
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+ &lt;/footer&gt;</pre>
+             </div><!-- .col-md-12 -->
+             </div><!-- .row -->
+
+                            <!-- Widgets -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="widget" class="heading-dash">Widgets</h3>
+                                    <p>Following classes control how the widget design their inside content. Structured in <code>aside</code> or <code>div</code> tag and titled <code>h5</code> heading for your SEO reference. Widget markups are same on sidebar & footer areas but styled by their containers, so see the complete markup from the <code>blog.html</code> and <code>footer.html</code> files.</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ol>
+                                                <li><code>.widget-tags</code></li>
+                                                <li><code>.social-links</code></li>
+                                                <li><code>.recent-posts</code></li>
+                                                <li><code>.images-list</code></li>
+                                                <li><code>.search_form</code></li>
+                                            </ol>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <pre>&lt;div class="widget"&gt;
+    &lt;h5 class="widget-title"&gt;...&lt;/h5&gt;
+    &lt;div class="<strong><em>recent-posts</em></strong>"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                                        </div>
+                                    </div><!-- .row -->
+
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+                            <!-- CSS -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h2 id="css" class="text-center">Cascading Style Sheets</h2>
+                                    <div class="divider brand centered"></div>
+
+                                    <h3 class="heading-dash" id="css-structure">CSS Structure</h3>
+                                    <p>Our template based on Bootstrap layout and included this library. Then you can use any css and helpers there for your need from it. Theme styles are included after the libraries and they are overwrite default styles. But we've tried to use all possibe default styles and write less additional styles.</p>
+                                    <p>This is a contents of <code>style.css</code> and you can find it on at top of the file. Please find your desired styles by index numbers from following map that needs to be changed.</p>
+                                    <pre>    Table of Contents
+    01. Header
+    02. Helpers
+    03. Elements
+    04. Content
+    05. Blog
+    06. Comments
+    07. Page
+    08. Portfolio
+    09. Widgets
+    10. Footer
+    11. Responsive</pre>
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+
+                            <!-- Template Helper Classes -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="class" class="heading-dash">Template Helper Classes</h3>
+                                    <p>We are explaining possibile classes on their relevant sections. But here we have following classes those aren't mentioned enough. They aren't abandoned because power of those are limitless. You can find many aspect of these on the demo pages.</p>
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th> Reference</th>
+                                                <th style="width: 160px;">Class Name</th>
+                                                <th>Purpose & Usage</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th rowspan="2" scope="row">Text</th>
+                                                <td>.text-brand</td>
+                                                <td>Makes your text as brand coloured.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>.text-light</td>
+                                                <td>Makes your text as lighter and white.</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Padding</th>
+                                                <td>
+.padding1x<br>
+.padding2x<br>
+.padding3x<br>
+.padding4x<br>
+.padding5x<br>
+.padding6x<br>
+.padding7x<br>
+.padding8x<br>
+.padding9x<br>
+.padding10x<br>
+.padding11x<br>
+.padding12x<br>
+.padding13x<br>
+.padding14x<br>
+.padding15x<br>
+.padding16x<br>
+.padding-no-top<br>
+.padding-no-bottom</td>
+                                                <td><p>Set padding top or bottom space on their current element. X delegates 10px now.</p>
+                                                    <p><span class="label label-warning">Note:</span> Don't change padding right and left space, only for top and bottom.</p>
+                                                    <p>Example: Making 2x top space only.</p>
+
+                                                    <pre>&lt;section class="padding2x no-padding-bottom"&gt;</pre>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+                            <!-- Bootstrap Helper Classes -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="boot" class="heading-dash">Bootstrap Helper Classes</h3>
+                                    <p>Collected following useful classes for your conent editing from all Bootstrap classes. These are used frequently on template files and you can build anything with those classes and combinations.</p>
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Reference</th>
+                                                <th>Class Name</th>
+                                                <th>Purpose</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Layout</th>
+                                                <td>.container<br>
+                                                    .container-fluid<br>
+                                                    .row<br>
+                                                    .col-xs-*<br>
+                                                    .col-sm-*<br>
+                                                    .col-sm-push-*<br>
+                                                    .col-sm-pull-*<br>
+                                                    .col-sm-offset-*<br>
+                                                    .col-md-*<br>
+                                                    .col-md-push-*<br>
+                                                    .col-md-pull-*<br>
+                                                    .col-md-offset-*<br>
+                                                    .col-lg-*<br>
+                                                    .col-lg-push-*<br>
+                                                    .col-lg-pull-*<br>
+                                                    .col-lg-offset-*</td>
+                                                <td>
+                                                    <p>Identify layout width and position.</p>
+                                                    <p><span class="label label-info">Pull, Push</span> Reset offsets, pushes, and pulls at specific breakpoints.</p>
+                                                    <p><span class="label label-info">Offset</span> Increase the left margin of a column by * columns.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="2" scope="row">Alignment</th>
+                                                <td>.pull-left<br>
+                                                    .pull-right</td>
+                                                <td>Aligns column order disregarding html sequence.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>.text-left<br>
+                                                    .text-right<br>
+                                                    .text-center</td>
+                                                <td><p>Text alignments</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="2" scope="row">Visibility</th>
+                                                <td>.hide<br>
+                                                    .show</td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>.visible-xs<br>
+                                                    .visible-sm<br>
+                                                    .visible-md<br>
+                                                    .visible-lg<br>
+                                                    .hidden-xs<br>
+                                                    .hidden-sm<br>
+                                                    .hidden-md<br>
+                                                    .hidden-lg</td>
+                                                <td>Visibility options related screen resolution.</td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="2" scope="row">Content Styling</th>
+                                                <td>.img-responsive<br>
+                                                    .img-rounded<br>
+                                                    .img-thumbnail<br>
+                                                    .img-circle</td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>.list-unstyled<br>
+                                                    .list-inline</td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+
+                            <!-- Site Header -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h2 id="head" class="text-center">Site Header</h2>
+                                    <div class="divider brand centered"></div>
+
+                                    <h3 id="head-style" class="heading-dash">Header</h3>
+                                    <p>Here is the header layout structure. Please make your changes in it and use on next to Body tag.</p>
+                                    <pre>   &lt;header id="header"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-sm-12"&gt;
+                    
+                    &lt;a href="index.php" class="logo"&gt;
+                        &lt;img alt="Image" src="images/logo.png"&gt;
+                    &lt;/a&gt;
+
+                    &lt;nav&gt;
+                        ...
+                    &lt;/nav&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;</pre>
+
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+                            <!-- Logo and Branding -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="logo" class="heading-dash">Logo and Branding</h3>
+                                    <p>Currently we use SVG logo format which is vector and doens't scall badly on any custom screens including retina displays. Then please replace your one in images directory.</p>
+
+                                    <p>Now logo's outer container has 142px wide and 110px high. Then your logo will be nested in this area. But you can change it to whatever for your need and set your changes in style.css file in line 170.</p>
+                                    <pre>.has-slider .header .logo {
+    width: 130px;
+    height: auto;
+}</pre>
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+                            <!-- Menu -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="menu" class="heading-dash">Menu</h3>
+                                    <p>Main navigation should place in the <code>header</code> tag and it has to be <code>nav</code> tag.</p>
+
+                                    <pre>   &lt;header id="header"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-sm-5 "&gt;
+                    
+                    &lt;nav&gt;
+
+                        &lt;!-- YOUR NAVIGATION --&gt; 
+                        &lt;ul&gt; 
+                         &lt;navigation-left&gt; 
+                            &lt;li&gt;&lt;a href="home.php"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="about us.php"&gt;About us&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="portfolio.php"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="fortfolio-single.php"&gt;Folio single&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="single.php"&gt;Blog Single&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="contact.php"&gt;Contact us &lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                    &lt;/nav&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;</pre>
+                                    <p><span class="label label-info">Note</span> Just draw your menu with clean <code>ul</code>, <code>li</code> and next level structure. You don't need to add extra class or configuration on those because scripts allow their required classes.</p>
+
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+
+                            <!-- Extras -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h2 id="extra" class="text-center">Extras & More Information</h2>
+                                    <div class="divider brand centered"></div>
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+                            <!-- Less -->
+                            <!-- <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="less" class="heading-dash">LESS Editing</h3>
+                                    <p>LESS execution.</p>
+                                </div>
+                            </div> --><!-- .row -->
+
+                            <!-- Fonts -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="font" class="heading-dash">Font Switching</h3>
+                                    <p>This short guide explains how to use the Google Fonts API to add fonts to your web pages. It's free and easy to implement a much wider variety of type into a website.</p>
+
+                                    <ol>
+                                        <li>Choose new font(s) from <a href="https://www.google.com/fonts/" target="_blank">Google Fonts</a> </li>
+                                        <li>Add a stylesheet link to request the desired web font(s) on the <code>head</code> tag which locates at the top of your markup
+                                            <pre>&lt;link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=<var>Font+Name</var>"&gt;</pre>
+                                        </li>
+                                        <li>Edit <code>style.css</code> file and set font family name or Style elements with the requested web font like this
+                                            <pre><var>body</var> {
+  font-family: '<var>Font Name</var>', serif;
+}
+<var>#header .main-menu li</var> {
+  font-family: '<var>Font Name</var>', serif;
+}
+<var>h1,h2,h3,h4,h5,h6</var> {
+  font-family: '<var>Font Name</var>', serif;
+}
+<var>.widget-title</var> {
+  font-family: '<var>Font Name</var>', serif;
+}
+                                            </pre>
+                                        </li>
+                                        <li>Delete old font(s) link from the <code>head</code> section.</li>
+                                    </ol>   
+                                    <p>If you need to implement other fonts then this, you should follow the instuction of your selected font library and follow the steps #3 and #4.</p>
+
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+                            <!-- Purchase Code -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h3 id="api" class="heading-dash">Get Purchase Code</h3>
+                                    <p>A Purchase Code is a unique code associated with your item purchase, it’s individual to you. You'll need a Purchase Code to access the <a href="http://themeton.com/support" target="_blank">Support Forum</a>. Follow below steps to find the code:</p>
+                                    <ol>
+                                        <li>Log into your <a href="http://themeforest.net" target="_blank">Envato Market account</a></li>
+                                        <li>From your account drop down links, select <a href="http://themeforest.net/downloads" target="_blank">Downloads</a></li>
+                                        <li>Click the ‘Download’ button that corresponds with the template</li>
+                                        <li>Select the ‘License certificate & purchase code’ download link:</li>
+                                    </ol>
+                                    <img class="aligncenter" src="https://help.market.envato.com/hc/en-us/article_attachments/201481270/2.png" alt="" />
+                                    <p>Your Purchase Code will be displayed within the License Certificate:</p>
+                                    <img class="aligncenter" src="https://help.market.envato.com/hc/en-us/article_attachments/201481280/3.png" alt="" />
+
+                                </div>
+                            </div><!-- .row -->
+
+                            <!-- Credits -->
+                            <div class="row padding4x no-padding-top">
+                                <div class="col-md-12">
+                                    <h3 id="credit" class="heading-dash">Credits</h3>
+                                    <p>Thank you to all who developed following projects/products. We really appreciate your support and time. We definitely couldn't do this template without you. We wish you all the best.</p>
+                                    <p><strong>Special thanks to:</strong></p>
+                                    <h4>Images</h4>
+                                    <ul>
+                                        
+                                        <li><a href="http://publicdomainarchive.com/" target="_blank">PublicDomainArchive.com</a> - Background images, portfolio image & gallery images</li>
+                                      
+
+                                    </ul>
+                                    <h4>Open Source Projects</h4>
+                                    <ul>
+                                        <li>Twitter <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                        <li><a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a></li>
+                                        <li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+                                        <li><a href=" http://fontawesome.io " target="_blank">Font Awesome</a></li>
+                                        <li><a href="http://lesscss.org" target="_blank">Less</a> By Alexis Sellier</li>
+                                    
+                                    </ul>
+                                  
+                                </div><!-- .col-md-12 -->
+                            </div><!-- .row -->
+
+
+                        </div><!-- .col-md-12 -->
+                    </div><!-- .row -->
+
+                </div><!-- .wrapper -->
+            </div><!-- .content -->
+        </div><!-- .container -->
+    </div>
+</div><!-- end .wrapper -->
+            <!-- Sub Footer
+            ================================================== -->
+            <div id="sub-footer" class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Copyright &copy; 2015 All Rights Reserved by <a href="http://themeton.com">ThemeTon</a> Corp.
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <ul class="footer-menu list-inline">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="http://template.themeton.com/Versaille">Live Demo</a></li>
+                                <li><a href="http://themeforest.net/item/versaille-personal-blog-html5-template/12967327?ref=themeton" class="btn-success btn-sm" style="color:#fff;"><span class="icon_download"></span> Buy Now</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- sub-footer -->
+
+
+            <!-- Back to top anchor -->
+            <span class="back-to-top"></span>
+
+        
+        
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="doc/google-code-prettify/prettify.js"></script>
+<script type="text/javascript">
+(function($){
+    "use strict";
+
+    
+    $(document).ready(function(){
+
+        $('body').find('pre').each(function(){
+            $(this).addClass('prettyprint');
+        });
+        prettyPrint();
+        });
+
+
+})(jQuery);
+</script>
+
+    </body>
+</html>
