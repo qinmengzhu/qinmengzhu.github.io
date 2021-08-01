@@ -163,7 +163,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 }
 /* line 147, http://themeton/versaillehtml/less/header.less */
 .section-header {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 100px;
 }
 /* line 151, http://themeton/versaillehtml/less/header.less */
@@ -1614,8 +1614,8 @@ form input[type=submit]:hover {
 .portfolio-grid .entry-filter a {
   display: inline-block;
   position: relative;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 45px;
+  margin-right: 45px;
   line-height: 0px;
 }
 /* line 29, http://themeton/versaillehtml/less/portfolio.less */
@@ -1729,6 +1729,10 @@ form input[type=submit]:hover {
   max-width: 100%;
 }
 /* line 152, http://themeton/versaillehtml/less/portfolio.less */
+
+.single-folio {
+  padding: 15px;
+} 
 .portfolio-grid .entry-portfolio .folio-item .entry-hover {
   position: absolute;
   left: 0px;
@@ -2305,7 +2309,7 @@ form input[type=submit]:hover {
 }
 /* line 62, http://themeton/versaillehtml/less/helpers.less */
 .pv5 {
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 50px;
 }
 /* line 63, http://themeton/versaillehtml/less/helpers.less */
