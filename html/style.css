@@ -1076,7 +1076,7 @@ form input[type=submit]:hover {
   margin: 0px;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   color: #000000;
 }
