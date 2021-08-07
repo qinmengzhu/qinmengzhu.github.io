@@ -25,6 +25,7 @@
   
   -------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
 
 /* line 1, http://themeton/versaillehtml/less/style.less */
 .transition {
@@ -715,7 +716,8 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 /* line 1, http://themeton/versaillehtml/less/content.less */
 body {
   background-color: #f9b8d8;
-  font-family: 'Open Sans';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   padding: 50px;
