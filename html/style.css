@@ -24,7 +24,7 @@
     11. Responsive
   
   -------------------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* line 1, http://themeton/versaillehtml/less/style.less */
 .transition {
@@ -1075,7 +1075,7 @@ form input[type=submit]:hover {
   
   margin: 0px;
   font-size: 18px;
-  font-family: 'roboto',sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
