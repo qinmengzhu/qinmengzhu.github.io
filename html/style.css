@@ -24,7 +24,7 @@
     11. Responsive
   
   -------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Palette+Mosaic&display=swap');
 
 /* line 1, http://themeton/versaillehtml/less/style.less */
 .transition {
@@ -1075,7 +1075,7 @@ form input[type=submit]:hover {
   
   margin: 0px;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Palette Mosaic', cursive;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
