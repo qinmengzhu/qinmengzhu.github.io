@@ -73,7 +73,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 /* line 31, http://themeton/versaillehtml/less/header.less */
 #header .entry-header nav ul li a {
   color: #fff;
-  font-family: 'Montserrat';
+  font-family: 'roboto condensed';
   font-weight: normal;
   font-size: 16px;
   color: rgba(255, 255, 255, 1);
@@ -1073,7 +1073,7 @@ form input[type=submit]:hover {
 .blog-grid .blog-item .entry-info .entry-excerpt h3 {
   margin: 0px;
   font-size: 18px;
-  font-family: 'Montserrat';
+  font-family: 'roboto condensed';
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
