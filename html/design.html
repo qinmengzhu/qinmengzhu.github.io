@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Qinmeng Z - desiign</title>
+	<title>Qinmeng Z - design</title>
 	<meta name="keywords" content="HTML5,CSS3,HTML,Template,Themeton" >
 	<meta name="description" content="Versaille - HTML Template">
 	<meta name="author" content="Themeton">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/tinylogo.jpg"/>
 
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400italic,700,300,300italic' rel='stylesheet' type='text/css'>
@@ -38,7 +38,7 @@
 						<!-- <li><a href="about.html">About us</a></li> -->
 						<li><a href="illustration.html">illustration</a></li>
 						<li><a href="photography.html">photography</a></li>
-						<li><a href="design.html">design</a></li>
+						<!-- <li><a href="design.html">design</a></li> -->
 						<li><a href="aboutme.html">about me</a></li>
 					</ul>
 				</nav>
@@ -76,7 +76,7 @@
 					<div class="col-sm-12">
 						<div class="entry-sh">
 							
-							<a href="index.html" class="logo">
+							<!-- <a href="index.html" class="logo"> -->
                                <!--  <span>Vers</span>aille<span>.</span></a>
 
 							<div class="search">
@@ -303,8 +303,8 @@
 							<!-- <a href="javascript:;"><i class="fa fa-facebook"></i></a>
 							<a href="javascript:;"><i class="fa fa-twitter"></i></a>
 							<a href="javascript:;"><i class="fa fa-pinterest"></i></a> -->
-							<a href="javascript:;"><i class="fa fa-instagram"></i></a>
-							<!-- <a href="javascript:;"><i class="fa fa-behance"></i></a> -->
+							<a href="javascript:onclick();"><i class="fa fa-instagram"></i></a>
+							<a href="javascript:sendEmail();"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
 				</div>
@@ -324,6 +324,20 @@
 
 
 	<!-- Include jQuery and Scripts -->
+    <script type="text/javascript">
+        function onclick() {
+      location.href = "https://www.instagram.com/qinm.z/";
+
+         }
+// 
+</script>
+    <script type="text/javascript">
+        function sendEmail() {
+      window.open('mailto:qinmzworks@gmail.com?subject=subject&body=body');
+
+         }
+// 
+</script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="vendors/gsap/TweenMax.min.js"></script>

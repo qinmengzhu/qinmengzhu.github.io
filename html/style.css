@@ -163,7 +163,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 }
 /* line 147, http://themeton/versaillehtml/less/header.less */
 .section-header {
-  padding-top: 25px;
+  padding-top: 35px;
   padding-bottom: 100px;
 }
 /* line 151, http://themeton/versaillehtml/less/header.less */
@@ -758,19 +758,19 @@ a:hover {
 }
 /* line 58, http://themeton/versaillehtml/less/content.less */
 .border-top {
-  border-top: 1px solid rgba(153, 153, 153, 0.18);
+  border-top: 0px solid rgba(153, 153, 153, 0.18);
 }
 /* line 59, http://themeton/versaillehtml/less/content.less */
 .border-left {
-  border-left: 1px solid rgba(153, 153, 153, 0.18);
+  border-left: 0px solid rgba(153, 153, 153, 0.18);
 }
 /* line 60, http://themeton/versaillehtml/less/content.less */
 .border-right {
-  border-right: 1px solid rgba(153, 153, 153, 0.18);
+  border-right: 0px solid rgba(153, 153, 153, 0.18);
 }
 /* line 61, http://themeton/versaillehtml/less/content.less */
 .border-bottom {
-  border-bottom: 1px solid rgba(153, 153, 153, 0.18);
+  border-bottom: 0px solid rgba(153, 153, 153, 0.18);
 }
 /* line 65, http://themeton/versaillehtml/less/content.less */
 .section-content {
@@ -1192,7 +1192,7 @@ form input[type=submit]:hover {
 /* line 253, http://themeton/versaillehtml/less/blog.less */
 .content-single p {
   color: #727272;
-  line-height: 36px;
+  line-height: 24px;
 }
 /* line 260, http://themeton/versaillehtml/less/blog.less */
 .content-single .entry-image img {
@@ -1200,8 +1200,9 @@ form input[type=submit]:hover {
 }
 /* line 267, http://themeton/versaillehtml/less/blog.less */
 .content-single .entry-desc span {
+  color: #f9b8d8;
   font-style: italic;
-  font-size: 13px;
+  font-size: 14px;
 }
 /* line 273, http://themeton/versaillehtml/less/blog.less */
 .content-single .entry-desc h4 {
@@ -1209,11 +1210,12 @@ form input[type=submit]:hover {
 }
 /* line 277, http://themeton/versaillehtml/less/blog.less */
 .content-single .entry-desc p {
-  padding: 20px 0;
+  padding: 0px 0;
   margin-top: 20px;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  font-size: 13px;
+  border-top: 0px solid #eeeeee;
+  border-bottom: 0px solid #eeeeee;
+  color: #f9b8d8;
+  font-size: 14px;
   font-style: italic;
 }
 /* line 289, http://themeton/versaillehtml/less/blog.less */
@@ -1595,8 +1597,8 @@ form input[type=submit]:hover {
   position: relative;
   display: block;
   text-align: center;
-  margin-bottom: 140px;
-  margin-top: 45px;
+  margin-bottom: 100px;
+  margin-top: 25px;
 }
 /* line 10, http://themeton/versaillehtml/less/portfolio.less */
 .portfolio-grid .entry-filter::before {
@@ -1840,7 +1842,7 @@ form input[type=submit]:hover {
 }
 /* line 260, http://themeton/versaillehtml/less/portfolio.less */
 .single-folio .carousel-control:hover {
-  color: #ef4416;
+  color: #f9b8d8;
 }
 /* line 265, http://themeton/versaillehtml/less/portfolio.less */
 .single-folio .carousel-control span:before {
