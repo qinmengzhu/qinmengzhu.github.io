@@ -24,7 +24,7 @@
     11. Responsive
   
   -------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap');
 
 /* line 1, http://themeton/versaillehtml/less/style.less */
 .transition {
@@ -74,8 +74,8 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 /* line 31, http://themeton/versaillehtml/less/header.less */
 #header .entry-header nav ul li a {
   color: #fff;
-  font-family: 'roboto condensed';
-  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
@@ -174,8 +174,8 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 }
 /* line 155, http://themeton/versaillehtml/less/header.less */
 .section-header .entry-sh .logo {
-  font-family: 'Montserrat';
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 30px;
   color: #000000;
   text-transform: uppercase;
@@ -215,7 +215,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 .section-header .entry-sh .search form input {
   width: 100%;
   border: 0px;
-  font-family: 'Open Sans';
+  font-family: 'Montserrat', sans-serif;
   text-transform: none;
   letter-spacing: 0px;
   font-size: 14px;
@@ -265,7 +265,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 }
 /* line 238, http://themeton/versaillehtml/less/header.less */
 .section-header .entry-sh .right-nav > li > a {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   font-weight: normal;
   text-transform: uppercase;
@@ -308,7 +308,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 .section-header .entry-sh .right-nav > li ul li a {
   display: block;
   overflow: hidden;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   font-size: 11px;
   text-transform: uppercase;
@@ -320,7 +320,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 /* line 283, http://themeton/versaillehtml/less/header.less */
 .section-header .entry-sh .right-nav > li ul li a span {
   float: right;
-  font-family: 'Open Sans';
+  font-family: 'Montserrat', sans-serif;
   text-transform: none;
 }
 /* line 289, http://themeton/versaillehtml/less/header.less */
@@ -349,7 +349,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 .tt-el-heading h3 {
   font-size: 24px;
   font-weight: bold;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   color: #000000;
   text-transform: uppercase;
   line-height: 1em;
@@ -359,7 +359,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 .tt-el-heading h5 {
   font-size: 14px;
   font-weight: normal;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   color: #999999;
   text-transform: uppercase;
   line-height: 1em;
@@ -451,7 +451,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.118);
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   font-weight: bold;
   line-height: 30px;
@@ -479,7 +479,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
   display: inline-block;
   background-color: #232323;
   color: #fff;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   font-weight: normal;
   line-height: 0px;
@@ -547,7 +547,7 @@ background: linear-gradient(0deg, rgba(255,242,82,1) 0%, rgba(249,184,216,1) 100
 /* line 224, http://themeton/versaillehtml/less/elements.less */
 .tt-el-chart .entry-labels .label-item {
   font-size: 14px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
@@ -727,7 +727,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   line-height: 1.3em;
   color: #000000;
@@ -1075,7 +1075,7 @@ form input[type=submit]:hover {
   
   margin: 0px;
   font-size: 18px;
-  font-family: 'Palette Mosaic', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
