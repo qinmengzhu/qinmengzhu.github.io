@@ -24,6 +24,7 @@
     11. Responsive
   
   -------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
 
 /* line 1, http://themeton/versaillehtml/less/style.less */
 .transition {
@@ -1071,9 +1072,10 @@ form input[type=submit]:hover {
 }
 /* line 105, http://themeton/versaillehtml/less/blog.less */
 .blog-grid .blog-item .entry-info .entry-excerpt h3 {
+  
   margin: 0px;
   font-size: 18px;
-  font-family: 'roboto condensed';
+  font-family: 'roboto',sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
